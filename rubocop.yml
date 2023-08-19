@@ -1,0 +1,95 @@
+require:
+  - rubocop-rails
+  - rubocop-rake
+  - rubocop-rspec
+  - rubocop-graphql
+
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+AllCops:
+  NewCops: disable
+
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_first_argument
+
+Layout/ArrayAlignment:
+  EnforcedStyle: with_first_element
+
+Layout/EndAlignment:
+  EnforcedStyleAlignWith: keyword
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: align_brackets
+
+Layout/LineEndStringConcatenationIndentation:
+  Enabled: true
+  EnforcedStyle: aligned
+
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: aligned
+  IndentationWidth:
+
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented_relative_to_receiver
+  IndentationWidth: 0
+
+Lint/LambdaWithoutLiteralBlock:
+  Enabled: true
+
+Metrics/AbcSize:
+  Max: 35
+
+Metrics/ClassLength:
+  Max: 150
+
+Metrics/MethodLength:
+  Max: 30
+
+Metrics/ModuleLength:
+  Max: 150
+
+Style/Documentation:
+  Enabled: false
+
+Style/GuardClause:
+  Enabled: false
+
+Style/ModuleFunction:
+  EnforcedStyle: extend_self
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/StringConcatenation:
+  Enabled: true
+  Mode: aggressive
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Style/SymbolArray:
+  EnforcedStyle: percent
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: no_comma
+
+
+# ------ GraphQL -----
+
+# Added default description on fields on app/graphl/types/base_field.rb
+GraphQL/FieldDescription:
+  Enabled: false
+
+# Added default description on arguments on app/graphl/types/base_argument.rb
+GraphQL/ArgumentDescription:
+  Enabled: false
+
+# Not very useful. It collects all attributes that has the same prefix e.g
+# Shipment has broker_carrier, broker_customer and it would suggest to create a
+# Broker Type, and add #carrier and #customer fields on it
+GraphQL/ExtractType:
+  Enabled: false
+
+GraphQL/ExtractInputType:
+  Enabled: false
