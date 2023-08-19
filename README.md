@@ -1,6 +1,6 @@
-# rubocop-next-tms
+# rubocop-next
 
-Rubocop configuration for Next TMS Ruby projects
+Rubocop configuration
 
 ## Installation
 
