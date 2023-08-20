@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
     'source_code_uri' => "https://github.com/next-tms/rubocop-next/tree/v#{spec.version}"
   }
 
-  spec.files = ['rubocop-next.gemspec', 'rubocop.yml', 'LICENSE']
+  spec.files = ['Gemfile', 'rubocop-next.gemspec', 'rubocop.yml', 'LICENSE']
 
   spec.add_dependency('rubocop', '~> 1.56.0')
   spec.add_dependency('rubocop-rails', '~> 2.20.2')
