@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name = 'rubocop-next'
-  spec.version = '1.0.0'
+  spec.version = '1.0.1'
 
   spec.authors = ['Third Party Transportation Systems LLC']
   spec.email = 'hello@next-tms.com'
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
     'source_code_uri' => "https://github.com/next-tms/rubocop-next/tree/v#{spec.version}"
   }
 
-  spec.files = ['rubocop.yml', 'LICENSE']
+  spec.files = ['rubocop-next.gemspec', 'rubocop.yml', 'LICENSE']
 
   spec.add_dependency('rubocop', '~> 1.56.0')
   spec.add_dependency('rubocop-rails', '~> 2.20.2')
