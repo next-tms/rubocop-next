@@ -1,8 +1,8 @@
 require:
+  - rubocop-graphql
   - rubocop-rails
   - rubocop-rake
   - rubocop-rspec
-  - rubocop-graphql
 
 inherit_gem:
   rubocop-shopify: rubocop.yml
