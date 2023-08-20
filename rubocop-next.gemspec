@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
 
   spec.description = 'Rubocop configuration'
   spec.summary = spec.description
-  spec.homepage = 'https://github.com/next-tms/interstellar'
+  spec.homepage = 'https://github.com/next-tms/rubocop-next'
 
   spec.metadata = {
     'allowed_push_host' => 'https://rubygems.org',
