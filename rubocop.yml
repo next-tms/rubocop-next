@@ -22,6 +22,14 @@ Layout/EndAlignment:
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: align_brackets
 
+Layout/FirstHashElementIndentation:
+  Enabled: true
+  EnforcedStyle: align_braces
+
+Layout/HashAlignment:
+  Enabled: true
+  EnforcedStyle: align_braces
+
 Layout/LineEndStringConcatenationIndentation:
   Enabled: true
   EnforcedStyle: aligned
