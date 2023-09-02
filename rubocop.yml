@@ -63,6 +63,9 @@ Style/Documentation:
 Style/GuardClause:
   Enabled: false
 
+Style/HashSyntax:
+  EnforcedShorthandSyntax: always
+
 Style/ModuleFunction:
   EnforcedStyle: extend_self
 
