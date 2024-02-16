@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency('rubocop-rails', '~> 2.20.2')
   spec.add_dependency('rubocop-rake', '~> 0.6.0')
   spec.add_dependency('rubocop-rspec', '~> 2.23.2')
-  spec.add_dependency('rubocop-shopify', '~> 2.14.0')
+  spec.add_dependency('rubocop-shopify', '>= 2.14', '< 2.16')
 
   spec.required_ruby_version = '>= 3.2.0'
 end
