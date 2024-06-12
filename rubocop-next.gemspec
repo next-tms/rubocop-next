@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.files = ['Gemfile', 'rubocop-next.gemspec', 'rubocop.yml', 'LICENSE']
 
-  spec.add_dependency('rubocop', '~> 1.56.0')
+  spec.add_dependency('rubocop', '>= 1.56', '< 1.65')
   spec.add_dependency('rubocop-graphql', '>= 1.4', '< 1.6')
   spec.add_dependency('rubocop-rails', '>= 2.20.2', '< 2.26.0')
   spec.add_dependency('rubocop-rake', '~> 0.6.0')
