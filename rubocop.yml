@@ -40,7 +40,6 @@ Layout/FirstHashElementIndentation:
 
 Layout/HashAlignment:
   Enabled: true
-  EnforcedStyle: align_braces
 
 Layout/LineEndStringConcatenationIndentation:
   Enabled: true
