@@ -10,10 +10,13 @@ inherit_gem:
 AllCops:
   NewCops: disable
 
-GraphQL/ArgumentDescription:
-  Enabled: false
+Gemspec/AddRuntimeDependency:
+  Enabled: true
 
-GraphQL/FieldDescription:
+Gemspec/AttributeAssignment:
+  Enabled: true
+
+GraphQL/ArgumentDescription:
   Enabled: false
 
 GraphQL/ExtractInputType:
@@ -22,11 +25,17 @@ GraphQL/ExtractInputType:
 GraphQL/ExtractType:
   Enabled: false
 
+GraphQL/FieldDescription:
+  Enabled: false
+
 Layout/ArgumentAlignment:
   EnforcedStyle: with_first_argument
 
 Layout/ArrayAlignment:
   EnforcedStyle: with_first_element
+
+Layout/EmptyLinesAfterModuleInclusion:
+  Enabled: true
 
 Layout/EndAlignment:
   EnforcedStyleAlignWith: keyword
@@ -45,15 +54,78 @@ Layout/LineEndStringConcatenationIndentation:
   Enabled: true
   EnforcedStyle: aligned
 
-Layout/MultilineOperationIndentation:
-  EnforcedStyle: aligned
-  IndentationWidth:
-
 Layout/MultilineMethodCallIndentation:
   EnforcedStyle: indented_relative_to_receiver
   IndentationWidth: 0
 
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: aligned
+  IndentationWidth:
+
+Lint/ArgumentMismatch:
+  Enabled: true
+
+Lint/ArrayLiteralInRegexp:
+  Enabled: true
+
+Lint/ConstantReassignment:
+  Enabled: true
+
+Lint/DataDefineOverride:
+  Enabled: true
+
+Lint/DeprecatedReference:
+  Enabled: true
+
+Lint/DuplicateSetElement:
+  Enabled: true
+
+Lint/HashNewWithKeywordArgumentsAsDefault:
+  Enabled: true
+
 Lint/LambdaWithoutLiteralBlock:
+  Enabled: true
+
+Lint/MisplacedMagicComment:
+  Enabled: true
+
+Lint/NameTypo:
+  Enabled: true
+
+Lint/NumericOperationWithConstantResult:
+  Enabled: true
+
+Lint/RedundantTypeConversion:
+  Enabled: true
+
+Lint/SharedMutableDefault:
+  Enabled: true
+
+Lint/SuperArgumentMismatch:
+  Enabled: true
+
+Lint/SuppressedExceptionInNumberConversion:
+  Enabled: true
+
+Lint/UnescapedBracketInRegexp:
+  Enabled: true
+
+Lint/UnreachablePatternBranch:
+  Enabled: true
+
+Lint/UselessConstantScoping:
+  Enabled: true
+
+Lint/UselessDefaultValueArgument:
+  Enabled: true
+
+Lint/UselessDefined:
+  Enabled: true
+
+Lint/UselessNumericOperation:
+  Enabled: true
+
+Lint/UselessOr:
   Enabled: true
 
 Metrics/AbcSize:
@@ -68,23 +140,131 @@ Metrics/MethodLength:
 Metrics/ModuleLength:
   Max: 150
 
+Naming/PredicateMethod:
+  Enabled: true
+
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
+
+Style/AmbiguousEndlessMethodDefinition:
+  Enabled: true
+
+Style/ArrayIntersectWithSingleElement:
+  Enabled: true
+
+Style/BitwisePredicate:
+  Enabled: true
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/CollectionQuerying:
+  Enabled: true
+
+Style/CombinableDefined:
+  Enabled: true
+
+Style/ComparableBetween:
+  Enabled: true
+
+Style/DigChain:
+  Enabled: true
+
+Style/DirectiveScope:
+  Enabled: true
 
 Style/Documentation:
   Enabled: false
 
+Style/EmptyClassDefinition:
+  Enabled: true
+
+Style/EmptyStringInsideInterpolation:
+  Enabled: true
+
+Style/FileNull:
+  Enabled: true
+
+Style/FileOpen:
+  Enabled: true
+
+Style/FileTouch:
+  Enabled: true
+
 Style/GuardClause:
   Enabled: false
+
+Style/HashFetchChain:
+  Enabled: true
+
+Style/HashSlice:
+  Enabled: true
 
 Style/HashSyntax:
   EnforcedShorthandSyntax: always
 
+Style/ItAssignment:
+  Enabled: true
+
+Style/ItBlockParameter:
+  Enabled: true
+
+Style/KeywordArgumentsMerging:
+  Enabled: true
+
+Style/MapIntoArray:
+  Enabled: true
+
+Style/MapJoin:
+  Enabled: true
+
 Style/ModuleFunction:
   EnforcedStyle: extend_self
 
-Style/ClassAndModuleChildren:
-  Enabled: false
+Style/ModuleMemberExistenceCheck:
+  Enabled: true
+
+Style/NegativeArrayIndex:
+  Enabled: true
+
+Style/OneClassPerFile:
+  Enabled: true
+
+Style/PartitionInsteadOfDoubleSelect:
+  Enabled: true
+
+Style/PredicateWithKind:
+  Enabled: true
+
+Style/ReduceToHash:
+  Enabled: true
+
+Style/RedundantArrayFlatten:
+  Enabled: true
+
+Style/RedundantFormat:
+  Enabled: true
+
+Style/RedundantInterpolationUnfreeze:
+  Enabled: true
+
+Style/RedundantMinMaxBy:
+  Enabled: true
+
+Style/ReverseFind:
+  Enabled: true
+
+Style/SafeNavigationChainLength:
+  Enabled: true
+
+Style/SelectByKind:
+  Enabled: true
+
+Style/SelectByRange:
+  Enabled: true
+
+Style/SendWithLiteralMethodName:
+  Enabled: true
 
 Style/StringConcatenation:
   Enabled: true
@@ -93,8 +273,17 @@ Style/StringConcatenation:
 Style/StringLiterals:
   EnforcedStyle: single_quotes
 
+Style/SuperArguments:
+  Enabled: true
+
 Style/SymbolArray:
   EnforcedStyle: percent
+
+Style/TallyMethod:
+  Enabled: true
+
+Style/TimeNow:
+  Enabled: true
 
 Style/TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: no_comma
