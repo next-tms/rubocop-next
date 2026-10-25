@@ -1,20 +1,13 @@
-require:
+plugins:
   - rubocop-graphql
   - rubocop-rails
   - rubocop-rake
   - rubocop-rspec
-
-inherit_gem:
-  rubocop-shopify: rubocop.yml
+  - rubocop-rspec_rails
 
 AllCops:
   NewCops: disable
-
-Gemspec/AddRuntimeDependency:
-  Enabled: true
-
-Gemspec/AttributeAssignment:
-  Enabled: true
+  SuggestExtensions: false
 
 GraphQL/ArgumentDescription:
   Enabled: false
@@ -28,269 +21,136 @@ GraphQL/ExtractType:
 GraphQL/FieldDescription:
   Enabled: false
 
-Layout/ArgumentAlignment:
-  EnforcedStyle: with_first_argument
-
-Layout/ArrayAlignment:
-  EnforcedStyle: with_first_element
-
-Layout/EmptyLinesAfterModuleInclusion:
+Layout/ClassStructure:
   Enabled: true
+  ExpectedOrder:
+    - module_inclusion
+    - constants
+    - public_class_methods
+    - initializer
+    - instance_methods
+    - protected_methods
+    - private_methods
 
-Layout/EndAlignment:
-  EnforcedStyleAlignWith: keyword
+Layout/EndOfLine:
+  EnforcedStyle: lf
 
-Layout/FirstArrayElementIndentation:
-  EnforcedStyle: align_brackets
+Layout/LineLength:
+  Max: 140
 
-Layout/FirstHashElementIndentation:
-  Enabled: true
-  EnforcedStyle: align_braces
+Layout/SpaceInLambdaLiteral:
+  Enabled: false
 
-Layout/HashAlignment:
-  Enabled: true
+Layout/SpaceInsideStringInterpolation:
+  Enabled: false
 
-Layout/LineEndStringConcatenationIndentation:
-  Enabled: true
-  EnforcedStyle: aligned
+Lint/BooleanSymbol:
+  Enabled: false
 
-Layout/MultilineMethodCallIndentation:
-  EnforcedStyle: indented_relative_to_receiver
-  IndentationWidth: 0
-
-Layout/MultilineOperationIndentation:
-  EnforcedStyle: aligned
-  IndentationWidth:
-
-Layout/RedundantLineBreak:
-  Enabled: true
-  InspectBlocks: true
-
-Lint/ArgumentMismatch:
-  Enabled: true
-
-Lint/ArrayLiteralInRegexp:
-  Enabled: true
-
-Lint/ConstantReassignment:
-  Enabled: true
-
-Lint/DataDefineOverride:
-  Enabled: true
-
-Lint/DeprecatedReference:
-  Enabled: true
-
-Lint/DuplicateSetElement:
-  Enabled: true
-
-Lint/HashNewWithKeywordArgumentsAsDefault:
-  Enabled: true
-
-Lint/LambdaWithoutLiteralBlock:
-  Enabled: true
-
-Lint/MisplacedMagicComment:
-  Enabled: true
-
-Lint/NameTypo:
-  Enabled: true
-
-Lint/NumericOperationWithConstantResult:
-  Enabled: true
-
-Lint/RedundantTypeConversion:
-  Enabled: true
-
-Lint/SharedMutableDefault:
-  Enabled: true
-
-Lint/SuperArgumentMismatch:
-  Enabled: true
-
-Lint/SuppressedExceptionInNumberConversion:
-  Enabled: true
-
-Lint/UnescapedBracketInRegexp:
-  Enabled: true
-
-Lint/UnreachablePatternBranch:
-  Enabled: true
-
-Lint/UselessConstantScoping:
-  Enabled: true
-
-Lint/UselessDefaultValueArgument:
-  Enabled: true
-
-Lint/UselessDefined:
-  Enabled: true
-
-Lint/UselessNumericOperation:
-  Enabled: true
-
-Lint/UselessOr:
-  Enabled: true
+Lint/ShadowedException:
+  Enabled: false
 
 Metrics/AbcSize:
-  Max: 35
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/BlockNesting:
+  Enabled: false
 
 Metrics/ClassLength:
-  Max: 150
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
 
 Metrics/MethodLength:
-  Max: 30
+  Enabled: false
 
 Metrics/ModuleLength:
-  Max: 150
+  Enabled: false
 
-Naming/PredicateMethod:
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Rails/LexicallyScopedActionFilter:
+  Enabled: false
+
+Rails/RedundantActiveRecordAllMethod:
   Enabled: true
+
+Rails/RootJoinChain:
+  Enabled: true
+
+Rails/RootPathnameMethods:
+  Enabled: true
+
+Rails/StrongParametersExpect:
+  Enabled: true
+
+Rails/TimeZone:
+  EnforcedStyle: strict
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/ImplicitSubject:
+  EnforcedStyle: require_implicit
+
+RSpec/LetSetup:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
 
 RSpec/MultipleMemoizedHelpers:
   Enabled: false
 
-Style/AmbiguousEndlessMethodDefinition:
+RSpec/NestedGroups:
+  Enabled: false
+
+RSpecRails/InferredSpecType:
   Enabled: true
 
-Style/ArrayIntersectWithSingleElement:
-  Enabled: true
+Style/AndOr:
+  Enabled: false
 
-Style/BlockDelimiters:
-  AllowedMethods: []
-
-Style/BitwisePredicate:
+Style/ArgumentsForwarding:
   Enabled: true
 
 Style/ClassAndModuleChildren:
   Enabled: false
 
-Style/CollectionQuerying:
-  Enabled: true
-
-Style/CombinableDefined:
-  Enabled: true
-
-Style/ComparableBetween:
-  Enabled: true
-
-Style/DigChain:
-  Enabled: true
-
-Style/DirectiveScope:
-  Enabled: true
-
 Style/Documentation:
   Enabled: false
 
-Style/EmptyClassDefinition:
+Style/FileRead:
   Enabled: true
 
-Style/EmptyStringInsideInterpolation:
+Style/FileWrite:
   Enabled: true
 
-Style/FileNull:
-  Enabled: true
-
-Style/FileOpen:
-  Enabled: true
-
-Style/FileTouch:
-  Enabled: true
-
-Style/GuardClause:
-  Enabled: false
-
-Style/HashFetchChain:
-  Enabled: true
-
-Style/HashSlice:
-  Enabled: true
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
 
 Style/HashSyntax:
   EnforcedShorthandSyntax: always
 
-Style/ItAssignment:
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/Send:
   Enabled: true
 
-Style/ItBlockParameter:
-  Enabled: true
-
-Style/KeywordArgumentsMerging:
-  Enabled: true
-
-Style/MapIntoArray:
-  Enabled: true
-
-Style/MapJoin:
-  Enabled: true
-
-Style/ModuleFunction:
-  EnforcedStyle: extend_self
-
-Style/ModuleMemberExistenceCheck:
-  Enabled: true
-
-Style/NegativeArrayIndex:
-  Enabled: true
-
-Style/OneClassPerFile:
-  Enabled: true
-
-Style/PartitionInsteadOfDoubleSelect:
-  Enabled: true
-
-Style/PredicateWithKind:
-  Enabled: true
-
-Style/ReduceToHash:
-  Enabled: true
-
-Style/RedundantArrayFlatten:
-  Enabled: true
-
-Style/RedundantFormat:
-  Enabled: true
-
-Style/RedundantInterpolationUnfreeze:
-  Enabled: true
-
-Style/RedundantMinMaxBy:
-  Enabled: true
-
-Style/ReverseFind:
-  Enabled: true
-
-Style/SafeNavigationChainLength:
-  Enabled: true
-
-Style/SelectByKind:
-  Enabled: true
-
-Style/SelectByRange:
-  Enabled: true
-
-Style/SendWithLiteralMethodName:
-  Enabled: true
-
-Style/StringConcatenation:
-  Enabled: true
-  Mode: aggressive
-
-Style/StringLiterals:
-  EnforcedStyle: single_quotes
-
-Style/SuperArguments:
-  Enabled: true
-
-Style/SymbolArray:
-  EnforcedStyle: percent
-
-Style/TallyMethod:
-  Enabled: true
-
-Style/TimeNow:
-  Enabled: true
-
-Style/TrailingCommaInHashLiteral:
-  EnforcedStyleForMultiline: no_comma
+Style/WordArray:
+  EnforcedStyle: brackets
