@@ -35,6 +35,9 @@ Layout/ClassStructure:
 Layout/EndOfLine:
   EnforcedStyle: lf
 
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+
 Layout/LineLength:
   Max: 140
 
