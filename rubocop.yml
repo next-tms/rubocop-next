@@ -153,6 +153,10 @@ Style/BlockDelimiters:
 Style/ClassAndModuleChildren:
   Enabled: false
 
+Style/ClassMethodsDefinitions:
+  Enabled: true
+  EnforcedStyle: self_class
+
 Style/Documentation:
   Enabled: false
 
