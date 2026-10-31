@@ -90,6 +90,9 @@ Naming/AccessorMethodName:
 Naming/VariableNumber:
   Enabled: false
 
+Rails/ActionOrder:
+  Enabled: false
+
 Rails/LexicallyScopedActionFilter:
   Enabled: false
 
