@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = 'rubocop-next'
-  spec.version = '1.0.10'
+  spec.version = '1.0.11'
 
   spec.authors = ['Third Party Transportation Management Systems LLC']
   spec.email = 'hello@next-tms.com'
