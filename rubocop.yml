@@ -149,6 +149,9 @@ Style/HashSyntax:
 Style/Lambda:
   EnforcedStyle: literal
 
+Style/NegatedIfElseCondition:
+  Enabled: true
+
 Style/Send:
   Enabled: true
 
