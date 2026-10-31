@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency('rubocop-rails', '>= 2.29', '< 2.39')
   spec.add_dependency('rubocop-rake', '~> 0.7.0')
   spec.add_dependency('rubocop-rspec', '>= 3.5', '< 3.11')
-  spec.add_dependency('rubocop-rspec_rails', '>= 2.31', '< 2.33')
+  spec.add_dependency('rubocop-rspec_rails', '>= 2.31', '< 2.34')
   spec.add_dependency('tsort')
 
   spec.required_ruby_version = '>= 3.3.0'
