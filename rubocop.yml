@@ -164,6 +164,9 @@ Style/Lambda:
 Style/NegatedIfElseCondition:
   Enabled: true
 
+Style/ReturnNil:
+  Enabled: true
+
 Style/Send:
   Enabled: true
 
