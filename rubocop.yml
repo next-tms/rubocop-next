@@ -107,6 +107,9 @@ Rails/TimeZone:
 Rails/WhereRange:
   Enabled: true
 
+Rails/WhereNot:
+  Enabled: true
+
 RSpec/AnyInstance:
   Enabled: false
 
