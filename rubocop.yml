@@ -38,6 +38,9 @@ Layout/EndOfLine:
 Layout/FirstHashElementLineBreak:
   Enabled: true
 
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+
 Layout/LineLength:
   Max: 140
 
