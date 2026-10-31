@@ -44,6 +44,10 @@ Layout/FirstMethodParameterLineBreak:
 Layout/LineLength:
   Max: 140
 
+Layout/RedundantLineBreak:
+  Enabled: true
+  InspectBlocks: true
+
 Layout/SpaceInLambdaLiteral:
   Enabled: false
 
@@ -104,10 +108,10 @@ Rails/StrongParametersExpect:
 Rails/TimeZone:
   EnforcedStyle: strict
 
-Rails/WhereRange:
+Rails/WhereNot:
   Enabled: true
 
-Rails/WhereNot:
+Rails/WhereRange:
   Enabled: true
 
 RSpec/AnyInstance:
@@ -142,6 +146,9 @@ Style/ArgumentsForwarding:
 
 Style/ArrayCoercion:
   Enabled: true
+
+Style/BlockDelimiters:
+  AllowedMethods: []
 
 Style/ClassAndModuleChildren:
   Enabled: false
