@@ -131,6 +131,9 @@ Style/AndOr:
 Style/ArgumentsForwarding:
   Enabled: true
 
+Style/ArrayCoercion:
+  Enabled: true
+
 Style/ClassAndModuleChildren:
   Enabled: false
 
