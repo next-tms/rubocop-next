@@ -5,6 +5,9 @@ plugins:
   - rubocop-rspec
   - rubocop-rspec_rails
 
+require:
+  - rubocop/cop/next_cops
+
 AllCops:
   NewCops: disable
   SuggestExtensions: false
@@ -116,6 +119,11 @@ Rails/WhereNot:
 
 Rails/WhereRange:
   Enabled: true
+
+Next/SetupInExample:
+  Enabled: true
+  Include:
+    - '**/*_spec.rb'
 
 RSpec/AnyInstance:
   Enabled: false
